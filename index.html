@@ -7,7 +7,7 @@ layout: default
   {% if posts_count > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
-        <div class="post py3">
+        <div class="post">
           <p class="post-meta">{{ post.date | date: site.date_format }}</p>
           {% if post.game %}
             <img src="{{ site.baseurl }}/images/{{ post.game }}--main.jpg" class="post__image" />
@@ -26,6 +26,6 @@ layout: default
 
     {% include pagination.html %}
   {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
+    <h1>{{ site.text.index.coming_soon }}</h3>
   {% endif %}
 </div>

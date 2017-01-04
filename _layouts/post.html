@@ -7,13 +7,13 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
-<div class="post-header mb2">
+<div class="post-header">
   <h1>{{ page.title }}</h1>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
   {% if page.update_date %}
     <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
   {% endif %}
-  <span class="post-meta small">
+  <span class="post-meta post-meta--small">
   {% if page.minutes %}
     {{ page.minutes }} {{ site.text.post.minute_read }}
   {% else %}
@@ -57,7 +57,7 @@ layout: default
 {% if site.show_related_posts %}
   <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
   {% for post in site.related_posts %}
-    <div class="post ml2">
+    <div class="post">
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
         <h4 class="post-title">{{ post.title }}</h4>
         <p class="post-summary">{{ post.summary }}</p>
