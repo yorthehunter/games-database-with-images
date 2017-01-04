@@ -23,6 +23,15 @@ layout: default
 </div>
 
 <article class="post-content">
+  {% if page.game_layout == true %}
+    <img src="{{ site.baseurl }}/images/{{ page.game }}--main.jpg" class="post-image" />
+
+    {% assign pics = page.extra_pics %}
+    {% for counter in (1..page.extra_pics) %}
+      <img src="{{ site.baseurl }}/images/{{ page.game }}--{{ counter }}.jpg" class="post-image" />
+    {% endfor %}
+  {% endif %}
+
   {{ content }}
 </article>
 

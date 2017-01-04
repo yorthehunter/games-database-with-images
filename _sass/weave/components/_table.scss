@@ -1,0 +1,94 @@
+// $banner__outset: space(md) 0 space(md) space(lg);
+//
+// $banner--error:   $error--color;
+// $banner--warning: $warning--color;
+// $banner--info:    $field--info;
+// $banner--success: $success--color;
+//
+// $banner--error__text-color:   $text-on-dark;
+// $banner--warning__text-color: $text-on-light;
+// $banner--info__text-color:    $text-on-light;
+// $banner--success__text-color: $text-on-dark;
+//
+// $banner__close-inline: space(md);
+
+$table-row-border: 1px solid color(gray-light);
+$table-row--hover-color: color(black-10);
+$table-row--stripe-color: color(gray-lightest);
+
+.#{$ns}-table {
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--basic {
+    border-collapse: collapse;
+    @extend %f-sm !optional;
+    line-height: 2rem;
+
+    // Defining this way (at the child level only) allows tables to be nested
+    // without overwriting the child table's styles
+    thead > tr,
+    tbody > tr,
+    tfoot > tr,
+    > tr {
+
+      > th {
+        text-align: left;
+      }
+
+      > th,
+      > td {
+        padding: 2rem 1rem;
+      }
+
+      &:hover {
+        background-color: $table-row--hover-color;
+      }
+    }
+  }
+
+  &--bordered {
+    thead > tr,
+    tbody > tr,
+    tfoot > tr,
+    > tr {
+      border-bottom: $table-row-border;
+      //
+      // // Adjusts vertical rhythm for border
+      // > th,
+      // > td {
+      //   padding: 2rem 1rem calc(2rem - 1px) 1rem;
+      // }
+    }
+  }
+
+  &--striped {
+    thead > tr,
+    tbody > tr,
+    tfoot > tr,
+    > tr {
+      &:nth-child(even) {
+        background-color: $table-row--stripe-color;
+      }
+
+      &:hover {
+        background-color: $table-row--hover-color;
+      }
+    }
+  }
+
+  &--condensed {
+    thead > tr,
+    tbody > tr,
+    tfoot > tr,
+    > tr {
+      > th,
+      > td {
+        padding-top:    1rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
