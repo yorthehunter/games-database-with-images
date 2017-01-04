@@ -1,9 +1,9 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
+title:       My Games DB
+email:       boru.design@gmail.com
+author:      Brian Cleveland
+description: "My collection of games: boxed PC games, snes, nes, genesis, others"
+baseurl:     "/my-games-db"
 url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
 
@@ -29,7 +29,7 @@ enable_anchorjs: false
 # Facebook Page integration
 # (for instant articles and other stuff)
 fb_page: false
-fb_page_id: 
+fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -42,10 +42,10 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: yorthehunter
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: yor_the_hunter
 skype_username:
 steam_nickname:
 google_plus_id:

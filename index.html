@@ -9,14 +9,17 @@ layout: default
       {% for post in paginator.posts %}
         <div class="post py3">
           <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          {% if post.game %}
+            <img src="{{ site.baseurl }}/images/{{ post.game }}--main.jpg" class="post__image" />
+          {% endif %}
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
+          <div class="post-summary">
+            <!-- {% if post.summary %}
               {{ post.summary }}
             {% else %}
               {{ post.excerpt }}
-            {% endif %}
-          </p>
+            {% endif %} -->
+          </div>
         </div>
       {% endfor %}
     </div>
