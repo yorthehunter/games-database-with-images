@@ -1,0 +1,52 @@
+<div class="weave-container">
+  <nav>
+    <div class="weave-tabs">
+      <a class="weave-tabs__label {% if page.this_page == "PC" %}is-current{% endif %}" href="#">PC</a>
+      <a class="weave-tabs__label {% if page.this_page == "NES" %}is-current{% endif %}" href="#">NES</a>
+      <a class="weave-tabs__label {% if page.this_page == "SNES" %}is-current{% endif %}" href="#">SNES</a>
+      <a class="weave-tabs__label {% if page.this_page == "Famicom" %}is-current{% endif %}" href="#">Famicom</a>
+      <a class="weave-tabs__label {% if page.this_page == "SFC" %}is-current{% endif %}" href="#">SFC</a>
+      <a class="weave-tabs__label {% if page.this_page == "Other" %}is-current{% endif %}" href="#">Other</a>
+    </div>
+  </nav>
+
+  <table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
+    {% assign games = (site.data.my_games) %}
+
+    <tr>
+      <th>Cover Image</th>
+      <th>Game Name</th>
+      <th>Game Type</th>
+      <!-- <th>Price Paid</th> -->
+      <th>Other Images</th>
+      <th>Notes</th>
+    </tr>
+    {% for game in games | where: "type" , "{{ page.this_page }}" %}
+      <tr>
+        <td>
+          <a href="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" target="_blank" class="games-index__image">
+            <img src="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" width="50" />
+          </a>
+        </td>
+        <td>{{ game.name }}</td>
+        <td>{{ game.type }}</td>
+        <!-- <td>{{ game.price_paid }}</td> -->
+        <td>
+          {% assign extra_images = game.extra_images %}
+          {% for counter in (1..extra_images) %}
+            <a href="{{ site.baseurl }}/images/{{ game.file_name }}--{{ counter }}.jpg" target="_blank" class="games-index__image">
+              <img src="{{ site.baseurl }}/images/{{ game.file_name }}--{{ counter }}.jpg" width="50" />
+            </a>
+          {% endfor %}
+        </td>
+        <td>
+          {% if game.notes %}
+            {{ game.notes }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

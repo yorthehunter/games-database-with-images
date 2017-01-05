@@ -1,6 +1,6 @@
 {% for page in site.pages %}
-    {% if page.tags contains "all" %}
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% if page.tags contains "index" %}
+        <a href="{{ page.url | prepend: site.baseurl }}">Index of Games</a>
     {% endif %}
 {% endfor %}
 {% for page in site.pages %}
