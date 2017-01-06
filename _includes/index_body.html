@@ -11,7 +11,8 @@
   </nav>
 
   <table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
-    {% assign games = (site.data.my_games) %}
+    {% assign type = page.this_page %}
+    {% assign games = (site.data.my_games| where: "type" , type) %}
 
     <tr>
       <th>Cover Image</th>
@@ -21,7 +22,7 @@
       <th>Other Images</th>
       <th>Notes</th>
     </tr>
-    {% for game in games | where: "type" , "{{ page.this_page }}" %}
+    {% for game in games %}
       <tr>
         <td>
           <a href="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" target="_blank" class="games-index__image">
