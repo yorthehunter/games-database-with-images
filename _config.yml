@@ -4,7 +4,7 @@ email:       boru.design@gmail.com
 author:      Brian Cleveland
 description: "My collection of games: boxed PC games, snes, nes, genesis, others"
 baseurl:     "/my-games-db"
-url:         "http://pixyll.com"
+url:         "yorthehunter.github.io/my-games-db"
 date_format: "%b %-d, %Y"
 
 # Google services

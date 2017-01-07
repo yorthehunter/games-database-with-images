@@ -1,0 +1,42 @@
+<div class="weave-container">
+  <table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
+    {% assign type = page.this_page %}
+    {% assign games = (site.data.my_games| where: "type" , type) %}
+
+    <tr>
+      <th>Cover Image</th>
+      <th>Game Name</th>
+      <th>Game Type</th>
+      <!-- <th>Price Paid</th> -->
+      <th>Other Images</th>
+      <th>Notes</th>
+    </tr>
+    {% for game in games %}
+      <tr>
+        <td>
+          <a href="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" target="_blank" class="games-index__image">
+            <img src="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" width="50" />
+          </a>
+        </td>
+        <td>{{ game.name }}</td>
+        <td>{{ game.type }}</td>
+        <!-- <td>{{ game.price_paid }}</td> -->
+        <td>
+          {% assign extra_images = game.extra_images %}
+          {% for counter in (1..extra_images) %}
+            <a href="{{ site.baseurl }}/images/{{ game.file_name }}--{{ counter }}.jpg" target="_blank" class="games-index__image">
+              <img src="{{ site.baseurl }}/images/{{ game.file_name }}--{{ counter }}.jpg" width="50" />
+            </a>
+          {% endfor %}
+        </td>
+        <td>
+          {% if game.notes %}
+            {{ game.notes }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

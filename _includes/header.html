@@ -1,14 +1,11 @@
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ root.url | prepend: site.baseurl }}/" class="site-title">{{ site.title }}</a>
-      <nav class="site-nav">
-        {% include navigation.html %}
-      </nav>
-      <div class="clearfix"></div>
-      {% if site.show_social_icons %}
-        {% include social_links.html %}
-      {% endif %}
-    </div>
-  </div>
+<header>
+  <nav class="site-navigation">
+    <a href="{{ root.url | prepend: site.baseurl }}/" class="site-title">{{ site.title }}</a>
+
+    {% include navigation.html %}
+
+    {% if site.show_social_icons %}
+      {% include social_links.html %}
+    {% endif %}
+  </nav>
 </header>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Games DB</title>
+    <description>My collection of games: boxed PC games, snes, nes, genesis, others</description>
+    <link>http://localhost:4000/my-games-db/</link>
+    <atom:link href="http://localhost:4000/my-games-db/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Leisure Suit Larry's Greatest Hits and Misses</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/my-games-db/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</link>
+        <guid isPermaLink="true">http://localhost:4000/my-games-db/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</guid>
+      </item>
+    
+      <item>
+        <title>So, What is Jekyll?</title>
+        <description>&lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and
+blogs. It is simple, static, and blog-aware. Jekyll uses the
+&lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; templating
+language and has builtin &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;
+and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot;&gt;Textile&lt;/a&gt; support.&lt;/p&gt;
+
+&lt;p&gt;It also ties in nicely to &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Jun 2014 08:32:18 -0400</pubDate>
+        <link>http://localhost:4000/my-games-db/jekyll/2014/06/09/so-what-is-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/my-games-db/jekyll/2014/06/09/so-what-is-jekyll/</guid>
+      </item>
+    
+  </channel>
+</rss>
