@@ -39,7 +39,7 @@
       {% endunless %}
       <td>{{ game.name }}</td>
       <td>
-        <a href="{{ root.url | prepend: site.baseurl }}/{{ game.type }}-games">{{ game.type }}</a>
+        <a href="{{ root.url | prepend: site.baseurl }}/{{ game.type | downcase }}-games">{{ game.type }}</a>
       </td>
       <!-- <td>{{ game.price_paid }}</td> -->
       {% unless type == "all" %}
