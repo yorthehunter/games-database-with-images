@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title></title>
+    <link>http://localhost:4000</link>
+    <description>
+      My collection of games: boxed PC games, snes, nes, genesis, others
+    </description>
+    
+        
+            <item>
+                <title>Leisure Suit Larry's Greatest Hits and Misses</title>
+                <link>http://localhost:4000/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</link>
+                <content:encoded>
+                    <![CDATA[
+                    
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</guid>
+                <description>
+                    
+                </description>
+                <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
+                <author>Brian Cleveland</author>
+            </item>
+        
+    
+        
+            <item>
+                <title>So, What is Jekyll?</title>
+                <link>http://localhost:4000/jekyll/2014/06/09/so-what-is-jekyll/</link>
+                <content:encoded>
+                    <![CDATA[
+                    <p>Jekyll is a tool for transforming your plain text into static websites and
+blogs. It is simple, static, and blog-aware. Jekyll uses the
+<a href="http://docs.shopify.com/themes/liquid-basics">Liquid</a> templating
+language and has builtin <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
+and <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a> support.</p>
+
+<p>It also ties in nicely to <a href="https://pages.github.com/">Github Pages</a>.</p>
+
+<p>Learn more about Jekyll on their <a href="http://jekyllrb.com/">website</a>.</p>
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/jekyll/2014/06/09/so-what-is-jekyll/</guid>
+                <description>
+                    
+                    Transform your plain text into static websites and blogs. Simple, static, and blog-aware.
+                    
+                </description>
+                <pubDate>Mon, 09 Jun 2014 08:32:18 -0400</pubDate>
+                <author>Brian Cleveland</author>
+            </item>
+        
+    
+  </channel>
+</rss>
