@@ -1,26 +1,49 @@
-<div class="weave-container">
-  <table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
-    {% assign type = page.this_page %}
-    {% assign games = (site.data.my_games| where: "type" , type) %}
+<nav class="weave-tabs">
+  <a class="weave-tabs__label {% if page.this_page == "all" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/">All</a>
+  <a class="weave-tabs__label {% if page.this_page == "PC" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/pc-games">PC</a>
+  <a class="weave-tabs__label {% if page.this_page == "NES" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/nes-games">NES</a>
+  <a class="weave-tabs__label {% if page.this_page == "SNES" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/snes-games">SNES</a>
+  <a class="weave-tabs__label {% if page.this_page == "Famicom" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/famicom-games">Famicom</a>
+  <a class="weave-tabs__label {% if page.this_page == "SFC" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/sfc-games">SFC</a>
+  <a class="weave-tabs__label {% if page.this_page == "Other" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/other-games">Other</a>
+</nav>
 
-    <tr>
+<table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
+  {% assign type = page.this_page %}
+  {% if page.this_page == "all" %}
+    {% assign games = (site.data.my_games| sort: "type" ) %}
+  {% else %}
+    {% assign games = (site.data.my_games| where: "type" , type) %}
+  {% endif %}
+
+  <tr>
+    {% unless type == "all" %}
       <th>Cover Image</th>
-      <th>Game Name</th>
-      <th>Game Type</th>
-      <!-- <th>Price Paid</th> -->
+    {% endunless %}
+    <th>Game Name</th>
+    <th>Game Type</th>
+    <!-- <th>Price Paid</th> -->
+    {% unless type == "all" %}
       <th>Other Images</th>
-      <th>Notes</th>
-    </tr>
-    {% for game in games %}
-      <tr>
+    {% endunless %}
+    <th>Notes</th>
+  </tr>
+  {% for game in games %}
+    <tr>
+      {% unless type == "all" %}
         <td>
           <a href="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" target="_blank" class="games-index__image">
             <img src="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" width="50" />
           </a>
         </td>
-        <td>{{ game.name }}</td>
-        <td>{{ game.type }}</td>
-        <!-- <td>{{ game.price_paid }}</td> -->
+      {% endunless %}
+      <td>{{ game.name }}</td>
+      <td>
+        <a href="{{ root.url | prepend: site.baseurl }}/{{ game.type }}-games">{{ game.type }}</a>
+      </td>
+      <!-- <td>{{ game.price_paid }}</td> -->
+      {% unless type == "all" %}
+
         <td>
           {% assign extra_images = game.extra_images %}
           {% for counter in (1..extra_images) %}
@@ -29,14 +52,14 @@
             </a>
           {% endfor %}
         </td>
-        <td>
-          {% if game.notes %}
-            {{ game.notes }}
-          {% else %}
-            -
-          {% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-  </table>
-</div>
+      {% endunless %}
+      <td>
+        {% if game.notes %}
+          {{ game.notes }}
+        {% else %}
+          -
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
