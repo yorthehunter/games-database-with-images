@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign posts_count = (paginator.posts | size) %}
+<!-- {% assign posts_count = (paginator.posts | size) %}
 
 <div class="home">
   {% if posts_count > 0 %}
@@ -13,13 +13,13 @@ layout: default
             <img src="{{ site.baseurl }}/images/{{ post.game }}--main.jpg" class="post__image" />
           {% endif %}
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <div class="post-summary">
+          <div class="post-summary"> -->
             <!-- {% if post.summary %}
               {{ post.summary }}
             {% else %}
               {{ post.excerpt }}
             {% endif %} -->
-          </div>
+          <!-- </div>
         </div>
       {% endfor %}
     </div>
@@ -28,4 +28,4 @@ layout: default
   {% else %}
     <h1>{{ site.text.index.coming_soon }}</h3>
   {% endif %}
-</div>
+</div> -->
