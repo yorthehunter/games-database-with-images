@@ -3,16 +3,16 @@
   <channel>
     <title>My Games DB</title>
     <description>My collection of games: boxed PC games, snes, nes, genesis, others</description>
-    <link>yorthehunter.github.io/my-games-db/my-games-db/</link>
-    <atom:link href="yorthehunter.github.io/my-games-db/my-games-db/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/my-games-db/</link>
+    <atom:link href="http://localhost:4000/my-games-db/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Leisure Suit Larry's Greatest Hits and Misses</title>
         <description>
 </description>
         <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
-        <link>yorthehunter.github.io/my-games-db/my-games-db/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</link>
-        <guid isPermaLink="true">yorthehunter.github.io/my-games-db/my-games-db/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</guid>
+        <link>http://localhost:4000/my-games-db/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</link>
+        <guid isPermaLink="true">http://localhost:4000/my-games-db/pc/boxed/2016/01/01/leisure-suit-larrys-greatest-hits-and-misses/</guid>
       </item>
     
       <item>
@@ -28,8 +28,8 @@ and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot
 &lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jun 2014 08:32:18 -0400</pubDate>
-        <link>yorthehunter.github.io/my-games-db/my-games-db/jekyll/2014/06/09/so-what-is-jekyll/</link>
-        <guid isPermaLink="true">yorthehunter.github.io/my-games-db/my-games-db/jekyll/2014/06/09/so-what-is-jekyll/</guid>
+        <link>http://localhost:4000/my-games-db/jekyll/2014/06/09/so-what-is-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/my-games-db/jekyll/2014/06/09/so-what-is-jekyll/</guid>
       </item>
     
   </channel>
