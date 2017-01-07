@@ -3,8 +3,8 @@ title:       My Games DB
 email:       boru.design@gmail.com
 author:      Brian Cleveland
 description: "My collection of games: boxed PC games, snes, nes, genesis, others"
-baseurl:     "/my-games-db"
-url:         "yorthehunter.github.io/my-games-db"
+baseurl:     "/games-database-with-images"
+url:         "yorthehunter.github.io/games-database-with-images"
 date_format: "%b %-d, %Y"
 
 # Google services
