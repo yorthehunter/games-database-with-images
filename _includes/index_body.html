@@ -8,23 +8,25 @@
   <a class="weave-tabs__label {% if page.this_page == "Other" %}is-current{% endif %}" href="{{ root.url | prepend: site.baseurl }}/other-games/">Other</a>
 </nav>
 
-<table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
-  {% assign type = page.this_page %}
-  {% if page.this_page == "all" %}
-    {% assign games = (site.data.my_games| sort: "type" ) %}
-  {% else %}
-    {% assign games = (site.data.my_games| where: "type" , type) %}
-  {% endif %}
+{% assign type = page.this_page %}
+{% if page.this_page == "all" %}
+  {% assign games = (site.data.my_games| sort: "type" ) %}
+{% else %}
+  {% assign games = (site.data.my_games| where: "type" , type) %}
+{% endif %}
 
+<p style="text-align: right;"> <strong>{{ games.size }}</strong> games in category <strong>{{ page.this_page }}</strong>
+
+<table class="weave-table weave-table--basic weave-table--condensed weave-table--full-width">
   <tr>
-    {% unless type == "all" %}
-      <th>Cover Image</th>
-    {% endunless %}
     <th>Game Name</th>
     {% if type == "all" %}
       <th>Game Type</th>
     {% endif %}
     <!-- <th>Price Paid</th> -->
+    {% unless type == "all" %}
+      <th>Cover</th>
+    {% endunless %}
     {% unless type == "all" %}
       <th>Other Images</th>
     {% endunless %}
@@ -32,6 +34,7 @@
   </tr>
   {% for game in games %}
     <tr>
+      <td>{{ game.name }}</td>
       {% unless type == "all" %}
         <td>
           <a href="{{ site.baseurl }}/images/{{ game.file_name }}--main.jpg" target="_blank" class="games-index__image">
@@ -39,7 +42,6 @@
           </a>
         </td>
       {% endunless %}
-      <td>{{ game.name }}</td>
       {% if type == "all" %}
         <td>
           <a href="{{ root.url | prepend: site.baseurl }}/{{ game.type | downcase }}-games">{{ game.type }}</a>
@@ -67,3 +69,5 @@
     </tr>
   {% endfor %}
 </table>
+
+<p style="text-align: right;"> {{ games.size }} games in category <strong>{{ page.this_page }}</strong>
