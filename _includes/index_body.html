@@ -21,7 +21,9 @@
       <th>Cover Image</th>
     {% endunless %}
     <th>Game Name</th>
-    <th>Game Type</th>
+    {% if type == "all" %}
+      <th>Game Type</th>
+    {% endif %}
     <!-- <th>Price Paid</th> -->
     {% unless type == "all" %}
       <th>Other Images</th>
@@ -38,9 +40,11 @@
         </td>
       {% endunless %}
       <td>{{ game.name }}</td>
-      <td>
-        <a href="{{ root.url | prepend: site.baseurl }}/{{ game.type | downcase }}-games">{{ game.type }}</a>
-      </td>
+      {% if type == "all" %}
+        <td>
+          <a href="{{ root.url | prepend: site.baseurl }}/{{ game.type | downcase }}-games">{{ game.type }}</a>
+        </td>
+      {% endif %}
       <!-- <td>{{ game.price_paid }}</td> -->
       {% unless type == "all" %}
 
