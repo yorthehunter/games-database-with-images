@@ -113,5 +113,7 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gallery-generator
+  
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
