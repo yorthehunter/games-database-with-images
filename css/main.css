@@ -785,9 +785,6 @@ p:last-of-type {
   margin-right: 1rem;
   min-width: calc(8.33333% - 2rem);
   max-width: 100%; }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-row > .weave-grid-col, .weave-grid-row > div {
-      min-width: calc(16.66667% - 2rem); } }
 
 .weave-container .weave-grid-row {
   margin-left: -1rem;
@@ -795,471 +792,237 @@ p:last-of-type {
 
 .weave-grid-col--1-1 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-1 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--1-2 {
   flex-basis: calc(50% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-2 {
-      flex-basis: calc(100% - 2rem); } }
 
 .weave-grid-col--1-3 {
   flex-basis: calc(33.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-3 {
-      flex-basis: calc(66.66667% - 2rem); } }
 
 .weave-grid-col--1-4 {
   flex-basis: calc(25% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-4 {
-      flex-basis: calc(50% - 2rem); } }
 
 .weave-grid-col--1-5 {
   flex-basis: calc(20% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-5 {
-      flex-basis: calc(40% - 2rem); } }
 
 .weave-grid-col--1-6 {
   flex-basis: calc(16.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-6 {
-      flex-basis: calc(33.33333% - 2rem); } }
 
 .weave-grid-col--1-7 {
   flex-basis: calc(14.28571% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-7 {
-      flex-basis: calc(28.57143% - 2rem); } }
 
 .weave-grid-col--1-8 {
   flex-basis: calc(12.5% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-8 {
-      flex-basis: calc(25% - 2rem); } }
 
 .weave-grid-col--1-9 {
   flex-basis: calc(11.11111% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-9 {
-      flex-basis: calc(22.22222% - 2rem); } }
 
 .weave-grid-col--1-10 {
   flex-basis: calc(10% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-10 {
-      flex-basis: calc(20% - 2rem); } }
 
 .weave-grid-col--1-11 {
   flex-basis: calc(9.09091% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-11 {
-      flex-basis: calc(18.18182% - 2rem); } }
 
 .weave-grid-col--1-12 {
   flex-basis: calc(8.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--1-12 {
-      flex-basis: calc(16.66667% - 2rem); } }
 
 .weave-grid-col--2-2 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-2 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--2-3 {
   flex-basis: calc(66.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-3 {
-      flex-basis: calc(133.33333% - 2rem); } }
 
 .weave-grid-col--2-4 {
   flex-basis: calc(50% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-4 {
-      flex-basis: calc(100% - 2rem); } }
 
 .weave-grid-col--2-5 {
   flex-basis: calc(40% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-5 {
-      flex-basis: calc(80% - 2rem); } }
 
 .weave-grid-col--2-6 {
   flex-basis: calc(33.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-6 {
-      flex-basis: calc(66.66667% - 2rem); } }
 
 .weave-grid-col--2-7 {
   flex-basis: calc(28.57143% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-7 {
-      flex-basis: calc(57.14286% - 2rem); } }
 
 .weave-grid-col--2-8 {
   flex-basis: calc(25% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-8 {
-      flex-basis: calc(50% - 2rem); } }
 
 .weave-grid-col--2-9 {
   flex-basis: calc(22.22222% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-9 {
-      flex-basis: calc(44.44444% - 2rem); } }
 
 .weave-grid-col--2-10 {
   flex-basis: calc(20% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-10 {
-      flex-basis: calc(40% - 2rem); } }
 
 .weave-grid-col--2-11 {
   flex-basis: calc(18.18182% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-11 {
-      flex-basis: calc(36.36364% - 2rem); } }
 
 .weave-grid-col--2-12 {
   flex-basis: calc(16.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--2-12 {
-      flex-basis: calc(33.33333% - 2rem); } }
 
 .weave-grid-col--3-3 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-3 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--3-4 {
   flex-basis: calc(75% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-4 {
-      flex-basis: calc(150% - 2rem); } }
 
 .weave-grid-col--3-5 {
   flex-basis: calc(60% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-5 {
-      flex-basis: calc(120% - 2rem); } }
 
 .weave-grid-col--3-6 {
   flex-basis: calc(50% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-6 {
-      flex-basis: calc(100% - 2rem); } }
 
 .weave-grid-col--3-7 {
   flex-basis: calc(42.85714% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-7 {
-      flex-basis: calc(85.71429% - 2rem); } }
 
 .weave-grid-col--3-8 {
   flex-basis: calc(37.5% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-8 {
-      flex-basis: calc(75% - 2rem); } }
 
 .weave-grid-col--3-9 {
   flex-basis: calc(33.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-9 {
-      flex-basis: calc(66.66667% - 2rem); } }
 
 .weave-grid-col--3-10 {
   flex-basis: calc(30% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-10 {
-      flex-basis: calc(60% - 2rem); } }
 
 .weave-grid-col--3-11 {
   flex-basis: calc(27.27273% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-11 {
-      flex-basis: calc(54.54545% - 2rem); } }
 
 .weave-grid-col--3-12 {
   flex-basis: calc(25% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--3-12 {
-      flex-basis: calc(50% - 2rem); } }
 
 .weave-grid-col--4-4 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-4 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--4-5 {
   flex-basis: calc(80% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-5 {
-      flex-basis: calc(160% - 2rem); } }
 
 .weave-grid-col--4-6 {
   flex-basis: calc(66.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-6 {
-      flex-basis: calc(133.33333% - 2rem); } }
 
 .weave-grid-col--4-7 {
   flex-basis: calc(57.14286% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-7 {
-      flex-basis: calc(114.28571% - 2rem); } }
 
 .weave-grid-col--4-8 {
   flex-basis: calc(50% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-8 {
-      flex-basis: calc(100% - 2rem); } }
 
 .weave-grid-col--4-9 {
   flex-basis: calc(44.44444% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-9 {
-      flex-basis: calc(88.88889% - 2rem); } }
 
 .weave-grid-col--4-10 {
   flex-basis: calc(40% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-10 {
-      flex-basis: calc(80% - 2rem); } }
 
 .weave-grid-col--4-11 {
   flex-basis: calc(36.36364% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-11 {
-      flex-basis: calc(72.72727% - 2rem); } }
 
 .weave-grid-col--4-12 {
   flex-basis: calc(33.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--4-12 {
-      flex-basis: calc(66.66667% - 2rem); } }
 
 .weave-grid-col--5-5 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-5 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--5-6 {
   flex-basis: calc(83.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-6 {
-      flex-basis: calc(166.66667% - 2rem); } }
 
 .weave-grid-col--5-7 {
   flex-basis: calc(71.42857% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-7 {
-      flex-basis: calc(142.85714% - 2rem); } }
 
 .weave-grid-col--5-8 {
   flex-basis: calc(62.5% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-8 {
-      flex-basis: calc(125% - 2rem); } }
 
 .weave-grid-col--5-9 {
   flex-basis: calc(55.55556% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-9 {
-      flex-basis: calc(111.11111% - 2rem); } }
 
 .weave-grid-col--5-10 {
   flex-basis: calc(50% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-10 {
-      flex-basis: calc(100% - 2rem); } }
 
 .weave-grid-col--5-11 {
   flex-basis: calc(45.45455% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-11 {
-      flex-basis: calc(90.90909% - 2rem); } }
 
 .weave-grid-col--5-12 {
   flex-basis: calc(41.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--5-12 {
-      flex-basis: calc(83.33333% - 2rem); } }
 
 .weave-grid-col--6-6 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-6 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--6-7 {
   flex-basis: calc(85.71429% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-7 {
-      flex-basis: calc(171.42857% - 2rem); } }
 
 .weave-grid-col--6-8 {
   flex-basis: calc(75% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-8 {
-      flex-basis: calc(150% - 2rem); } }
 
 .weave-grid-col--6-9 {
   flex-basis: calc(66.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-9 {
-      flex-basis: calc(133.33333% - 2rem); } }
 
 .weave-grid-col--6-10 {
   flex-basis: calc(60% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-10 {
-      flex-basis: calc(120% - 2rem); } }
 
 .weave-grid-col--6-11 {
   flex-basis: calc(54.54545% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-11 {
-      flex-basis: calc(109.09091% - 2rem); } }
 
 .weave-grid-col--6-12 {
   flex-basis: calc(50% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--6-12 {
-      flex-basis: calc(100% - 2rem); } }
 
 .weave-grid-col--7-7 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--7-7 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--7-8 {
   flex-basis: calc(87.5% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--7-8 {
-      flex-basis: calc(175% - 2rem); } }
 
 .weave-grid-col--7-9 {
   flex-basis: calc(77.77778% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--7-9 {
-      flex-basis: calc(155.55556% - 2rem); } }
 
 .weave-grid-col--7-10 {
   flex-basis: calc(70% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--7-10 {
-      flex-basis: calc(140% - 2rem); } }
 
 .weave-grid-col--7-11 {
   flex-basis: calc(63.63636% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--7-11 {
-      flex-basis: calc(127.27273% - 2rem); } }
 
 .weave-grid-col--7-12 {
   flex-basis: calc(58.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--7-12 {
-      flex-basis: calc(116.66667% - 2rem); } }
 
 .weave-grid-col--8-8 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--8-8 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--8-9 {
   flex-basis: calc(88.88889% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--8-9 {
-      flex-basis: calc(177.77778% - 2rem); } }
 
 .weave-grid-col--8-10 {
   flex-basis: calc(80% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--8-10 {
-      flex-basis: calc(160% - 2rem); } }
 
 .weave-grid-col--8-11 {
   flex-basis: calc(72.72727% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--8-11 {
-      flex-basis: calc(145.45455% - 2rem); } }
 
 .weave-grid-col--8-12 {
   flex-basis: calc(66.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--8-12 {
-      flex-basis: calc(133.33333% - 2rem); } }
 
 .weave-grid-col--9-9 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--9-9 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--9-10 {
   flex-basis: calc(90% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--9-10 {
-      flex-basis: calc(180% - 2rem); } }
 
 .weave-grid-col--9-11 {
   flex-basis: calc(81.81818% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--9-11 {
-      flex-basis: calc(163.63636% - 2rem); } }
 
 .weave-grid-col--9-12 {
   flex-basis: calc(75% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--9-12 {
-      flex-basis: calc(150% - 2rem); } }
 
 .weave-grid-col--10-10 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--10-10 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--10-11 {
   flex-basis: calc(90.90909% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--10-11 {
-      flex-basis: calc(181.81818% - 2rem); } }
 
 .weave-grid-col--10-12 {
   flex-basis: calc(83.33333% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--10-12 {
-      flex-basis: calc(166.66667% - 2rem); } }
 
 .weave-grid-col--11-11 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--11-11 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--11-12 {
   flex-basis: calc(91.66667% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--11-12 {
-      flex-basis: calc(183.33333% - 2rem); } }
 
 .weave-grid-col--12-12 {
   flex-basis: calc(100% - 2rem); }
-  @media screen and (min-width: 0) and (max-width: 599px) {
-    .weave-grid-col--12-12 {
-      flex-basis: calc(200% - 2rem); } }
 
 .weave-grid-col--1-1-xl {
   flex-basis: calc(100% - 2rem) !important; }
