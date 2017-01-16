@@ -36,9 +36,9 @@
 <loc>http://localhost:4000/games-database-with-images/thanks/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/games-database-with-images/photos/games/</loc>
+<loc>http://localhost:4000/games-database-with-images/images/games/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/games-database-with-images/photos/</loc>
+<loc>http://localhost:4000/games-database-with-images/images/</loc>
 </url>
 </urlset>

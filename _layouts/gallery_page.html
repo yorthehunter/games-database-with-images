@@ -1,0 +1,30 @@
+---
+layout: page
+---
+<style TYPE="text/css">
+
+
+.gallery-image {
+  /*margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;*/
+  max-height: 100%;
+  max-width: 100%;
+}
+
+</style>
+
+
+<!-- <h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1> -->
+<!-- <hr /> -->
+<div class="weave-grid-row">
+  {% for image in page.images %}
+    <div class="gallery-image-wrapper weave-grid-col--1-3 weave-grid-col--1-2-sm weave-grid-col--1-1-xs">
+      <a name="{{ image.name }}"></a>
+      <a href="{{ image.name }}"{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
+        <img class="gallery-image" src="thumbs/{{ image.name }}" />
+      </a>
+    </div>
+  {% endfor %}
+</div>

@@ -1,6 +1,6 @@
 $grid--gutter-size: 2rem;
 $grid--max-columns: 12;
-$option--flex-grid-mobile-adjust: true;
+$option--flex-grid-mobile-adjust: false;
 
 .#{$ns}-grid-row {
   @extend %flex-container, %flex-wrap, %flex-content-start !optional;

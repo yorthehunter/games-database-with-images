@@ -114,6 +114,11 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gallery-generator
-  
+
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
+
+gallery:
+  dir: images               # Path to the gallery
+  title: "Gallery"           # Title for gallery index page
+  title_prefix: "Gallery of "  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
