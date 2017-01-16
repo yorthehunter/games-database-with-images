@@ -38,7 +38,7 @@
       {% unless type == "all" %}
         <td>
           <a href="{{ site.baseurl }}/images/games/{{ game.file_name }}--main.jpg" target="_blank" class="games-index__image">
-            <img src="{{ site.baseurl }}/images/games/{{ game.file_name }}--main.jpg" />
+            <img src="{{ site.baseurl }}/images/games/thumbs/{{ game.file_name }}--main.jpg" />
           </a>
         </td>
       {% endunless %}
@@ -54,7 +54,7 @@
           {% assign extra_images = game.extra_images %}
           {% for counter in (1..extra_images) %}
             <a href="{{ site.baseurl }}/images/games/{{ game.file_name }}--{{ counter }}.jpg" target="_blank" class="games-index__image">
-              <img src="{{ site.baseurl }}/images/games/{{ game.file_name }}--{{ counter }}.jpg" />
+              <img src="{{ site.baseurl }}/images/games/thumbs/{{ game.file_name }}--{{ counter }}.jpg" />
             </a>
           {% endfor %}
         </td>
