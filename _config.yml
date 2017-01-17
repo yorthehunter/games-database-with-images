@@ -122,3 +122,12 @@ gallery:
   dir: images               # Path to the gallery
   title: "Gallery"           # Title for gallery index page
   title_prefix: "Gallery of "  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  galleries:
+    SNES:
+      best_image: final-fantasy-3--main.jpg
+    NES:
+      best_image: final-fantasy--main.jpg
+    Famicom:
+      best_image: jesus--main.jpg
+    PC:
+      best_image: torins-passage--main.jpg
