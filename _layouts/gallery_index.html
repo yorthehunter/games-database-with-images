@@ -2,22 +2,19 @@
 layout: page
 ---
 <style TYPE="text/css">
-.gallery-wrapper {
-  width: 35em;
-  text-align: center;
-  padding: 1em 0 4em 0;
-}
-.gallery-best-image{
-  max-height: 20em;
-  max-width: 20em;
+.gallery-best-image {
+  max-height: 100%;
+  max-width: 100%;
 }
 </style>
+<div class="weave-grid-row">
 {% for gallery in page.galleries %}
-<div class="gallery-wrapper">
+  <div class="weave-grid-col--1-3 weave-grid-col--1-2-sm weave-grid-col--1-1-xs u-stack--xl">
     <a href="{{ gallery['gallery'] }}">
-        <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+      <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
     </a>
-    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
-    {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
-</div>
+    <h3 style="margin: 0;"><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
+    <p>{{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}</p>
+  </div>
 {% endfor %}
+</div>
