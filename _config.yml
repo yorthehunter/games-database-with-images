@@ -131,5 +131,7 @@ gallery:
       best_image: jesus--main.jpg
     PC:
       best_image: torins-passage--main.jpg
+    SFC:
+      best_image: dq-6-sfc--main.jpg
     Other:
       best_image: rocky--main.jpg
