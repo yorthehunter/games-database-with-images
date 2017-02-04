@@ -7,13 +7,24 @@ layout: page
   max-width: 100%;
 }
 </style>
+
+<h5>
+  <a href="{{ site.baseurl }}/all-covers/">
+    View all box covers »
+  </a>
+</h5>
+
 <div class="weave-grid-row">
 {% for gallery in page.galleries %}
   <div class="weave-grid-col--1-3 weave-grid-col--1-2-sm weave-grid-col--1-1-xs u-stack--xl">
     <a href="{{ gallery['gallery'] }}">
       <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
     </a>
-    <h3 style="margin: 0;"><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
+    <h3 style="margin: 0;">
+      <a href="{{ gallery['gallery'] }}">
+        {{ gallery["name"] }}
+      </a>
+    </h3>
     <p>{{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}</p>
   </div>
 {% endfor %}
